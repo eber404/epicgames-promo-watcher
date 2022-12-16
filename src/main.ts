@@ -122,10 +122,10 @@ const handlePromotions = async () => {
 };
 
 function main() {
-  handlePromotions();
-
   try {
     const REFRESH_RATE_MS = 60_000;
+
+    handlePromotions();
 
     setInterval(
       handlePromotions,
